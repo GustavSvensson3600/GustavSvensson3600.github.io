@@ -1,0 +1,13 @@
+# Original brand files – kept locally, not needed by the website
+Sloth-solutions-grafiskt/
+
+# Full-size photo (the site uses assets/img/gustav-web.jpg)
+assets/img/gustav.jpg
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

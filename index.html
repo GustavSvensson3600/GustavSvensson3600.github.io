@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- Change data-theme to switch colour theme (see css/themes.css):
+     sloth | sage | espresso -->
+<html lang="en" data-theme="sloth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sloth Solutions – Backend developer in Gothenburg</title>
+  <meta name="description" content="Sloth Solutions – Gustav Svensson, backend developer and consultant in Gothenburg. Calm, solid backend development: APIs, integrations, databases and cloud.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-figure.svg">
+
+  <!-- Fonts: Antonio (headings, stand-in for BC Ludva) + Jost (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER: logo, the two "tabs" and the section links
+     ============================================================ -->
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <img class="logo-on-light" src="assets/img/logotext-green.svg" alt="Sloth Solutions">
+      <img class="logo-on-dark" src="assets/img/logotext-beige.svg" alt="Sloth Solutions">
+    </a>
+
+    <!-- The two tabs. aria-current="page" marks the active one. -->
+    <div class="tabs">
+      <a href="index.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+        Development
+      </a>
+      <a href="wine.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h10l-.6 6a4.4 4.4 0 0 1-8.8 0L7 3zM12 13.5V21M8.5 21h7"/></svg>
+        Wine tastings
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#method">How I work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" data-theme="poster">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Backend consultant · Gothenburg</span>
+      <h1>Solid backends,<br>built <em>without the rush.</em></h1>
+      <p class="lead">
+        I'm Gustav Svensson – a backend developer who helps teams in the Gothenburg area
+        build APIs, integrations and systems that are calm to run and easy to keep building on.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#contact">Get in touch</a>
+        <a class="btn btn--ghost" href="#services">What I do</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <img class="sloth" src="assets/img/logo-figure.svg" alt="">
+      <span class="bubble">Hang in there – I've got the backend.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES – copy a <article class="card"> block to add one
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>What I can help you with</h2>
+      <p class="lead">Everything behind the screen – the parts nobody sees, until they stop working.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon">01</div>
+        <h3>APIs &amp; integrations</h3>
+        <p>Well-designed REST APIs and integrations between the systems you already have – documented, versioned and predictable.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">02</div>
+        <h3>Backend systems</h3>
+        <p>Services and business logic built to be read, tested and changed – so the next feature is easier than the last.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">03</div>
+        <h3>Databases &amp; data</h3>
+        <p>Data modelling, queries that don't make anyone wait, migrations and keeping your data in good shape.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">04</div>
+        <h3>Cloud &amp; delivery</h3>
+        <p>CI/CD pipelines, containers and cloud setups that let you deploy on a Friday without breaking a sweat.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">05</div>
+        <h3>Review &amp; rescue</h3>
+        <p>A second pair of eyes on architecture and code, or a steady hand for untangling a legacy system.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">06</div>
+        <h3>An extra team member</h3>
+        <p>Need more backend capacity for a while? I join your team, your rituals and your codebase.</p>
+      </article>
+    </div>
+
+    <!-- Technologies & topics – one <li> per chip, add/remove freely -->
+    <ul class="chips reveal" aria-label="Technologies and topics">
+      <li>C#</li>
+      <li>.NET</li>
+      <li>Kotlin</li>
+      <li>Docker</li>
+      <li>Kubernetes</li>
+      <li>Azure</li>
+      <li>AWS</li>
+      <li>Software architecture</li>
+      <li>Domain-Driven Design</li>
+      <li>Event- &amp; message-driven architecture</li>
+      <li>Microservices</li>
+      <li>REST APIs</li>
+      <li>SQL</li>
+      <li>CI/CD</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW I WORK – "the sloth method"
+     ============================================================ -->
+<section class="section section--alt" id="method">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How I work</span>
+      <h2>The sloth method</h2>
+      <p class="lead">Sloths aren't lazy – they're efficient. They never waste energy on the wrong move. Neither should your project.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Hang around first</h3>
+        <p>Before writing a line of code I get to know your domain, your team and what actually needs solving.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Move deliberately</h3>
+        <p>Small, tested steps that ship continuously. Steady progress beats heroic weekends every time.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Leave it tidy</h3>
+        <p>Readable code, sensible docs and a smooth handover – so your team owns the result, not just me.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fun fact strip -->
+<div class="container">
+  <p class="funfact reveal">
+    <span>Top speed of a sloth: <b>~0.25 km/h</b></span>
+    <span aria-hidden="true">·</span>
+    <span>My email replies: <b>a lot quicker</b></span>
+  </p>
+</div>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <!-- Photo: gustav-web.jpg is a resized copy of gustav.jpg (900 px wide, ~95 KB) -->
+    <div class="portrait reveal">
+      <img src="assets/img/gustav-web.jpg" alt="Gustav Svensson" width="900" height="1197" loading="lazy">
+    </div>
+
+    <div class="reveal">
+      <span class="eyebrow">About</span>
+      <h2>Hi, I'm Gustav</h2>
+      <p>
+        Since 2022 I've run Sloth Solutions, a one-person consultancy for backend development based in Gothenburg.
+        Over 10 years I've built backends for EV charging infrastructure, fire safety systems
+        and business systems – places where things really have to keep working. And I enjoy
+        the quiet satisfaction of systems that simply do.
+      </p>
+      <p class="muted">
+        The name is a reminder to myself: think first, move with purpose, and don't hurry
+        the parts that need care.
+      </p>
+      <ul class="facts">
+        <li>Backend developer &amp; consultant – 10 years of experience</li>
+        <li>Based in Gothenburg – on-site, hybrid or remote</li>
+        <li>Works in English and Swedish</li>
+        <li>Founded 2022 · F-tax registered · Org. no. 559344-0026</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section cta" id="contact" data-theme="rust">
+  <div class="container narrow reveal">
+    <div class="leaves" aria-hidden="true"><span></span><span></span><span></span></div>
+    <span class="eyebrow">Contact</span>
+    <h2>Got a backend that needs a calm pair of hands?</h2>
+    <p class="lead">Tell me a little about your project and I'll get back to you – promise it won't take sloth speed.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="mailto:gustavsp91@gmail.com?subject=Backend%20project">Send me an email</a>
+    </div>
+    <ul class="contact-list">
+      <li><a href="mailto:gustavsp91@gmail.com">gustavsp91@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/gustav-svensson-63603567/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="tel:+46738521167">+46 73 852 11 67</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" data-theme="espresso">
+  <div class="container footer-grid">
+    <div>
+      <img class="logo-on-dark" src="assets/img/logotext-beige.svg" alt="Sloth Solutions">
+      <p class="tagline">Don't just do something, sit there!</p>
+    </div>
+    <small>© <span data-year></span> Sloth Solutions · Org. no. 559344-0026 · Gothenburg</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

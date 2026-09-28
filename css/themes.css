@@ -1,0 +1,115 @@
+/* =====================================================================
+   themes.css – ALL colours for the site live here.
+
+   How it works:
+   - Each theme is a block of CSS custom properties (variables).
+   - Switch the whole site by changing data-theme on <html>
+       <html lang="en" data-theme="sloth">
+   - A single section can use another theme by giving it its own
+     data-theme, e.g. <header class="hero" data-theme="poster">.
+   - style.css only uses these variables, never hard-coded colours.
+   - Preview all themes by opening the site with ?themes in the URL.
+
+   Brand palette (from the graphic profile):
+     rust      #b24317   cream     #feedde   sage light #acc9bd
+     sage      #6f988a   taupe     #83736c   espresso   #382722
+   ===================================================================== */
+
+/* ---------- sloth (default): warm white page, cream alternating sections ---------- */
+:root,
+[data-theme="sloth"] {
+  --bg: #fffaf4;            /* page background */
+  --bg-alt: #feedde;        /* alternating sections (.section--alt) */
+  --surface: #ffffff;       /* cards */
+  --text: #45332c;          /* body text */
+  --text-muted: #6e5f59;    /* secondary text */
+  --heading: #382722;       /* headings */
+  --accent: #b24317;        /* links, buttons (rust) */
+  --accent-strong: #8f3512; /* hover */
+  --accent-soft: #feedde;   /* soft tints, chips */
+  --on-accent: #fffaf4;     /* text on accent buttons */
+  --line: #eadccd;          /* thin borders */
+  --alt-text-muted: #6e5f59;/* muted text inside .section--alt */
+  --alt-accent: #8f3512;    /* accent inside .section--alt */
+
+  /* optional extras (other themes fall back to these via var(--x, fallback)) */
+  --leaf: #6f988a;          /* decorative leaves / green details (not for text) */
+  --green-text: #4f7568;    /* green that is dark enough for text */
+  --sun: #feedde;           /* the "sun" circle behind the sloth */
+  --logo-light-display: inline-block; /* logo for light backgrounds */
+  --logo-dark-display: none;          /* logo for dark backgrounds  */
+}
+
+/* ---------- sage: same as sloth but sections alternate with sage green ---------- */
+[data-theme="sage"] {
+  --bg: #fffaf4;
+  --bg-alt: #acc9bd;
+  --surface: #ffffff;
+  --text: #45332c;
+  --text-muted: #6e5f59;
+  --heading: #382722;
+  --accent: #b24317;
+  --accent-strong: #8f3512;
+  --accent-soft: #feedde;
+  --on-accent: #fffaf4;
+  --line: #eadccd;
+  --alt-text-muted: #4a3b35;
+  --alt-accent: #8a2d13;
+}
+
+/* ---------- espresso: dark brown, cream text (also used for the footer) ---------- */
+[data-theme="espresso"] {
+  --bg: #382722;
+  --bg-alt: #45332c;
+  --surface: #45332c;
+  --text: #feedde;
+  --text-muted: #c9b8ae;
+  --heading: #feedde;
+  --accent: #acc9bd;
+  --accent-strong: #d3e5dc;
+  --accent-soft: #4d3b33;
+  --on-accent: #382722;
+  --line: #5a463e;
+  --alt-text-muted: #c9b8ae;
+  --alt-accent: #acc9bd;
+  --sun: #45332c;
+  --logo-light-display: none;
+  --logo-dark-display: inline-block;
+}
+
+/* ---------- poster: the wine poster colours (sage sky, cream sun, dark rust) ---------- */
+[data-theme="poster"] {
+  --bg: #acc9bd;
+  --bg-alt: #feedde;
+  --surface: #fffaf4;
+  --text: #382722;
+  --text-muted: #4a3b35;
+  --heading: #382722;
+  --accent: #8a2d13;
+  --accent-strong: #6e220e;
+  --accent-soft: #feedde;
+  --on-accent: #feedde;
+  --line: #93b5a8;
+  --alt-text-muted: #6e5f59;
+  --alt-accent: #8f3512;
+  --sun: #feedde;
+}
+
+/* ---------- rust: strong call-to-action bands ---------- */
+[data-theme="rust"] {
+  --bg: #b24317;
+  --bg-alt: #8a2d13;
+  --surface: #9e3a13;
+  --text: #feedde;
+  --text-muted: #feedde;
+  --heading: #fffaf4;
+  --accent: #feedde;
+  --accent-strong: #ffffff;
+  --accent-soft: #9e3a13;
+  --on-accent: #8a2d13;
+  --line: #c9653d;
+  --alt-text-muted: #feedde;
+  --alt-accent: #feedde;
+  --leaf: #acc9bd;
+  --sun: #c9653d;
+}

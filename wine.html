@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sloth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wine tastings – Sloth Solutions</title>
+  <meta name="description" content="Relaxed, guided wine tastings for companies and private parties in the Gothenburg area, hosted by Gustav Svensson of Sloth Solutions.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-figure.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER (same as index.html, but the wine tab is active)
+     ============================================================ -->
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <img class="logo-on-light" src="assets/img/logotext-green.svg" alt="Sloth Solutions">
+      <img class="logo-on-dark" src="assets/img/logotext-beige.svg" alt="Sloth Solutions">
+    </a>
+
+    <div class="tabs">
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+        Development
+      </a>
+      <a href="wine.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h10l-.6 6a4.4 4.4 0 0 1-8.8 0L7 3zM12 13.5V21M8.5 21h7"/></svg>
+        Wine tastings
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#formats">Tastings</a></li>
+      <li><a href="#themes">Themes</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">Good to know</a></li>
+      <li><a href="#book">Book</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============================================================
+     HERO – with the poster
+     ============================================================ -->
+<section class="hero" data-theme="poster">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Don't hurry · be happy</span>
+      <h1>Wine tastings,<br><em>taken slowly.</em></h1>
+      <p class="lead">
+        When I'm not writing backend code, I host relaxed, guided wine tastings for companies
+        and private parties in the Gothenburg area. No snobbery and no rush – just good wine,
+        good stories and a room full of people who forgot to check their phones.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#book">Book a tasting</a>
+        <a class="btn btn--ghost" href="#formats">See the options</a>
+      </div>
+    </div>
+
+    <img class="poster-frame reveal" src="assets/img/poster.png"
+         alt="Poster: a smiling sloth meditating with a glass of wine. Text: Don't hurry be happy">
+  </div>
+</section>
+
+<!-- ============================================================
+     FORMATS – copy an <article class="card"> block to add one.
+     ============================================================ -->
+<section class="section" id="formats">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Tastings</span>
+      <h2>Pick your pace</h2>
+      <p class="lead">Every tasting is tailored to the group – here are a few starting points.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon">01</div>
+        <h3>Company after-work</h3>
+        <p>A laid-back way to end the week, welcome new colleagues or round off a kick-off. A few good wines, a few good stories and an optional blind-tasting quiz to settle who really has the best palate in the office. <a href="#themes">See theme ideas</a>.</p>
+        <ul class="meta">
+          <li><span>Length</span><span>1.5–2 h</span></li>
+          <li><span>Group</span><span>6–20 people</span></li>
+          <li><span>Wines</span><span>4–5</span></li>
+          <li><span>Price</span><span>from 450 kr / person*</span></li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">02</div>
+        <h3>Private party</h3>
+        <p>Birthdays, dinners, bachelor parties or just friends around a table. I bring the structure – you bring the good mood.</p>
+        <ul class="meta">
+          <li><span>Length</span><span>2–3 h</span></li>
+          <li><span>Group</span><span>6–20 people</span></li>
+          <li><span>Wines</span><span>5–6</span></li>
+          <li><span>Price</span><span>from 300 kr / person*</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Price note – update together with the prices on the cards above -->
+    <p class="muted reveal price-note">
+      * Wine included. Company prices exclude VAT, private prices include VAT.
+      Minimum charge equals 10 guests.
+      Fancier wines? Just ask and I'll adjust the price.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     THEME IDEAS – copy an <article class="theme"> block to add one
+     ============================================================ -->
+<section class="section section--alt" id="themes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Theme ideas</span>
+      <h2>Something to sip on</h2>
+      <p class="lead">A few favourites for your after-work – or come with your own idea and we'll build an evening around it.</p>
+    </div>
+    <div class="themes">
+      <article class="theme reveal">
+        <h3>Tour de France</h3>
+        <p>Six stages, six regions – from Champagne in the north to Provence in the south. No bike needed.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Big Bold Reds of Italy</h3>
+        <p>Barolo, Amarone, Primitivo and friends. Dark, generous wines for people who like a firm handshake.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Six Shades of Riesling</h3>
+        <p>Bone-dry to lusciously sweet, Germany to Australia – one grape, a surprising number of personalities.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Old World vs. New World</h3>
+        <p>The same grapes from Europe and from the rest of the world, side by side. Can you tell which is which?</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Bubbles Beyond Champagne</h3>
+        <p>Cava, Crémant, Prosecco, English fizz – and one real Champagne hiding among them. Spot it if you can.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Blind Date</h3>
+        <p>Six wines with the labels hidden. Guess the grape, the country and the price – in teams, with points.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Cheap &amp; Cheerful</h3>
+        <p>Great bottles under 150 kr that taste like they cost twice as much. Very useful knowledge.</p>
+      </article>
+      <article class="theme reveal">
+        <h3>Christmas Table</h3>
+        <p>Which wines survive herring, ham, meatballs and Jansson's temptation all at once? We find out.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Three unhurried steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Say hello</h3>
+        <p>Tell me the occasion, the date, roughly how many you are and where you'd like to be.</p>
+      </div>
+      <div class="step reveal">
+        <h3>We shape the evening</h3>
+        <p>Together we pick a theme and a level – from total beginners to people who already own a decanter.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Pour, taste, talk</h3>
+        <p>I guide the tasting with stories, tips and plenty of room for questions. You just enjoy it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ – copy a <details> block to add a question.
+     ============================================================ -->
+<section class="section section--alt" id="faq">
+  <div class="container narrow">
+    <div class="section-head reveal center" style="text-align:center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions, answered slowly</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>What's the idea behind your tastings?</summary>
+        <p>To take the snobbery out of wine. Wine is made to be enjoyed, there are no right answers and all taste is subjective. I'll share what's generally true about a wine and what I taste in the glass – but what you taste is just as valid. Most of all, I want everyone to have a fun night.</p>
+      </details>
+      <details>
+        <summary>Where do the tastings take place?</summary>
+        <p>At your office, your home or a venue of your choice in the Gothenburg area.</p>
+      </details>
+      <details>
+        <summary>Who provides the wine?</summary>
+        <p>I do. I pick the wines based on what you'd like – a favourite region, a grape you've always wanted to try, or simply "surprise us" – and bring everything to the tasting. The wine is included in the price.</p>
+      </details>
+      <details>
+        <summary>Do we need to know anything about wine?</summary>
+        <p>Not at all. The tastings are made for curious people, not experts. If there are enthusiasts in the group, they'll find something new too.</p>
+      </details>
+      <details>
+        <summary>Can you combine it with food?</summary>
+        <p>I don't provide food, but if you already have something planned I can adjust the wines to suit it, or suggest a few easy things to serve alongside.</p>
+      </details>
+      <details>
+        <summary>How far in advance should we book?</summary>
+        <p>A few weeks ahead is ideal, especially around Christmas and during the spring party season.</p>
+      </details>
+    </div>
+    <p class="muted center" style="text-align:center; margin-top:1.5rem; font-size:.95rem">
+      All participants must be of legal drinking age. Please drink responsibly.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOOK
+     ============================================================ -->
+<section class="section cta" id="book" data-theme="rust">
+  <div class="container narrow reveal">
+    <div class="leaves" aria-hidden="true"><span></span><span></span><span></span></div>
+    <span class="eyebrow">Book</span>
+    <h2>Let's raise a (slow) glass</h2>
+    <p class="lead">Send me the date, the occasion and the number of guests, and I'll get back with a suggestion.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="mailto:gustavsp91@gmail.com?subject=Wine%20tasting%20enquiry">Ask about a tasting</a>
+    </div>
+    <ul class="contact-list">
+      <li><a href="mailto:gustavsp91@gmail.com">gustavsp91@gmail.com</a></li>
+      <li><a href="tel:+46738521167">+46 73 852 11 67</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" data-theme="espresso">
+  <div class="container footer-grid">
+    <div>
+      <img class="logo-on-dark" src="assets/img/logotext-beige.svg" alt="Sloth Solutions">
+      <p class="tagline">Don't hurry, be happy</p>
+    </div>
+    <small>© <span data-year></span> Sloth Solutions · Org. no. 559344-0026 · Gothenburg</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
